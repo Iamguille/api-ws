@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 
 const client = new Client({
     puppeteer: {
-        executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+        args: ['--no-sandbox'],
         headless: true,
     },
     authStrategy: new LocalAuth()
